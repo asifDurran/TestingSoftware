@@ -1,0 +1,28 @@
+{
+  "name": "mern-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon index.js --prefix backend",
+    "start": "npm start --prefix client",
+    "sass": "npm run sass --prefix client",
+    "dev": "concurrently \" npm run server \" \" npm start \" \" npm run sass \""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "formidable": "^1.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2",
+    "uuid": "^8.3.2"
+  }
+}

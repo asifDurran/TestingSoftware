@@ -1,0 +1,13 @@
+@use 'scss/abstracts/base';
+// import utils
+@use "scss/utils//utils";
+// import components
+@use "scss/components/bgImage";
+@use "scss/components/nav";
+@use "scss/components/sidebar";
+@use "scss/components/cover";
+// import layout file
+@use 'scss/layout/layout';
+
+// import pages
+@use "scss/pages/register";

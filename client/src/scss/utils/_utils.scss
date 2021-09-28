@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/colors" as *;
+@each $name, $shade in $colors {
+  @each $shadeName, $value in $shade {
+    .#{$name}-#{$shadeName} {
+      color: $value;
+    }
+    .bg-#{$name}-#{$shadeName} {
+      background: $value;
+    }
+  }
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn-default {
+  height: 45px;
+  display: inline-block;
+  padding: 0 20px;
+
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.pl-15 {
+  padding-left: 15px;
+}

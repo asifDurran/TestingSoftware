@@ -1,0 +1,16 @@
+@use "../abstracts/mixins" as *;
+.bgImage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 0, 100% 68%, 0 100%, 0 99%, 0% 60%, 0 0);
+
+  &__video {
+    @include position(absolute, 0, 0, 0, 0, 100%, 100vh);
+    overflow: hidden;
+    background-position: left center;
+    video {
+      object-fit: cover;
+    }
+  }
+}
